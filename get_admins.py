@@ -11,9 +11,9 @@ except:
 def get_command(webpage_ID, page_num, list):
      command = "curl -H \"Authorization: Bearer "
      command += token
-     command +="\" \"https://byui.instructure.com/api/v1/accounts/" 
+     command +="\" \"" 
      command += str(webpage_ID)
-     command += "/admins?per_page=100&page="
+     command += ""
      command += str(page_num)
      command += "\" > "
      command += directory
